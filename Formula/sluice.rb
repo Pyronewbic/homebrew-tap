@@ -2,8 +2,8 @@
 class Sluice < Formula
   desc "Sandboxed, egress-firewalled container runner for projects and coding agents"
   homepage "https://github.com/Pyronewbic/Sluice"
-  url "https://github.com/Pyronewbic/Sluice/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "f64d373659e7d543150ed70fcf87bbd6dc77f7ad7f4a6cb728ee6ac3026632a6"
+  url "https://github.com/Pyronewbic/Sluice/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "af5073901df5691ab7612476c81305d9d76d89736f5a768c21e6095bc1e3af5b"
   license "Apache-2.0"
   head "https://github.com/Pyronewbic/Sluice.git", branch: "main"
 

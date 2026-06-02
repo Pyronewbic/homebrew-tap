@@ -18,6 +18,16 @@ class Sluice < Formula
     zsh_completion.install libexec/"completion/_sluice"
   end
 
+  def caveats
+    <<~EOS
+      sluice needs docker or podman to build and run sandboxes.
+      Quickstart:
+        cd your-repo && sluice      # scaffold a config, then build + run it sandboxed
+        sluice agent claude         # run a coding agent (codex, gemini, ...) sandboxed
+      Docs: https://github.com/Pyronewbic/Sluice
+    EOS
+  end
+
   test do
     output = shell_output("SLUICE_ENGINE=__nope__ #{bin}/sluice 2>&1", 1)
     assert_match "SLUICE_ENGINE=__nope__ not found", output

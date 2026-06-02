@@ -2,8 +2,8 @@
 class Sluice < Formula
   desc "Sandboxed, egress-firewalled container runner for projects and coding agents"
   homepage "https://github.com/Pyronewbic/Sluice"
-  url "https://github.com/Pyronewbic/Sluice/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "953fd168a3e99a5ff887af75a3464a298a9681559d0f2071c66ef4fee332ff8f"
+  url "https://github.com/Pyronewbic/Sluice/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "a5f8a9696b483e12a50346d60115f57de3c47fbe953360f8fb36989e137b9b5c"
   license "Apache-2.0"
   head "https://github.com/Pyronewbic/Sluice.git", branch: "main"
 
@@ -12,6 +12,9 @@ class Sluice < Formula
   def install
     libexec.install Dir["*"]
     bin.install_symlink libexec/"bin/sluice"
+    # Shell completion (auto-loaded by brew's completion dirs).
+    bash_completion.install libexec/"completion/sluice.bash" => "sluice"
+    zsh_completion.install libexec/"completion/_sluice"
   end
 
   test do

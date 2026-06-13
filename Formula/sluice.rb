@@ -3,8 +3,8 @@ class Sluice < Formula
   desc "Sandboxed, egress-firewalled container runner for projects and coding agents"
   homepage "https://github.com/Pyronewbic/Sluice"
   # cosign keyless-signed release tarball (verify: see SECURITY.md "Verifying a release").
-  url "https://github.com/Pyronewbic/Sluice/releases/download/v0.8.0/sluice-0.8.0.tar.gz"
-  sha256 "7b1617bcbeeb778226fdbaf969bcf1f66f9ca053600bca692882b3481b0f40e3"
+  url "https://github.com/Pyronewbic/Sluice/releases/download/v0.9.0/sluice-0.9.0.tar.gz"
+  sha256 "8a183a2ff43f81263a8b88717dd2e084f2bbd86853d82d3c4bc3f50380e26ee9"
   license "Apache-2.0"
   head "https://github.com/Pyronewbic/Sluice.git", branch: "main"
 
